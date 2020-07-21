@@ -7,7 +7,7 @@ namespace App\Utils;
 class Polygon
 {
     public static function isPointinPolygon($point,$PolygonArray){
-    // latをx軸，lngをy軸として考えているつもり
+    // lat（緯度）をy軸，lng（経度）をx軸として考えているつもり
         $cn = 0;
         if($point["lat"]==null){
             $point["lat"]=0.0;
